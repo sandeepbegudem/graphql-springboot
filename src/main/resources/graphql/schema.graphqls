@@ -1,1 +1,16 @@
-type Product{    id: ID,    name:String    category:String    price:Float    stock:Int}type Query{    retrieveAllProducts:[Product]    retrieveAllProductsByCategory(category:String):[Product]}type Mutation{    updateProductStockById(id:ID, stock:Int):Product}
+type Product{
+    id: ID,
+    name:String
+    category:String
+    price:Float
+    stock:Int
+}
+
+type Query{
+    retrieveAllProducts:[Product]
+    retrieveAllProductsByCategory(category:String):[Product]
+}
+
+type Mutation{
+    updateProductStockById(id:ID, stock:Int):Product
+}

@@ -1,1 +1,21 @@
-server:  port: 1990spring:  graphql:    graphiql:      enabled: true      path: /api/v1/products/graphql  application:    name: inventory-service-application  datasource:    driverClassName: com.mysql.cj.jdbc.Driver    url: jdbc:mysql://localhost:3306/inv-service-db    username: root    password: 12345  jpa:    hibernate.ddl-auto: update    generate-ddl: true    show-sql: true
+server:
+  port: 1990
+
+spring:
+  graphql:
+    graphiql:
+      enabled: true
+      path: /api/v1/products/graphql
+  application:
+    name: inventory-service-application
+
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/inv-service-db
+    username: root
+    password: 12345
+
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true
